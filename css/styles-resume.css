@@ -1,0 +1,190 @@
+body{
+    
+}
+
+span {
+    color: pink;
+}
+h1, h2{
+    padding-left: 30px;
+} 
+.resume {
+display: flex;
+
+}
+
+
+.experience div ,.education div{
+    padding: 30px;
+}
+.design-items {
+padding: 0 30px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+}
+.skill-bar {
+    height: 4px;
+    width: 300px;
+    background-color: grey;
+}
+
+.bar-fill {
+    height: 4px;
+    background-color: pink;
+}
+
+.dots-container {
+    display: flex;
+    padding: 0 30px;
+    width: 300px;
+}
+.progress-dot {
+    margin-right: 15px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.language {
+    padding: 0 30px;
+}
+.dot-fill {
+    margin-right: 15px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: pink;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+      
+  }
+  
+  .progress-bar-1 {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink 90%, pink 0);  
+  }
+  .progress-bar-2 {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink 75%, pink 0);  
+  }
+  .progress-bar-3 {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink 85%, pink 0);  
+  }
+  .progress-bar-4 {
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink 95%, pink 0);  
+  }
+  .progress-bar-1::before {
+    content: "90%";
+  }
+  .progress-bar-2::before {
+    content: "75%";
+  }
+  .progress-bar-3::before {
+    content: "85%";
+  }
+  .progress-bar-4::before {
+    content: "95%";
+  }
+
+  .coding{
+    text-align: center;
+    width: 100px;
+  }
+
+  .coding-div {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content: center;
+    margin: 0 30px;
+  }
+
+  ul {
+    list-style: none;
+  }
+  .tick-icon {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: pink;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+/* Carousel slides */
+
+
+/* Dots container */
+.dot-container {
+    text-align: center;
+}
+
+/* Individual dot */
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Active dot */
+.active {
+    background-color: #f00; /* Change color for the active dot */
+}
+
+.carousel-slide {
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.me-content img {
+    width: 100px;
+    border-radius: 50%;
+}
+.me-content {
+    margin-top: 10px; /* Add margin to separate the text from the image */
+}
+
+.carousel-slide:not(:first-child) {
+    display: none;
+}

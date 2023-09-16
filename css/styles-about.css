@@ -1,0 +1,150 @@
+
+
+/*
+style of scroll bar
+*/
+/* Style the scrollbar track (the area where the scrollbar moves) */
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Style the scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Set the color of the thumb */
+    border-radius: 5px; /* Round the corners of the thumb */
+}
+
+/* Style the scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change the thumb color on hover */
+}
+
+body {
+    font-family: "Sofia", sans-serif;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-pre{
+    background-color: aqua;
+}
+
+.line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), #000, rgba(0, 0, 0, 0));
+    text-align: center;
+}
+.divider {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 500px;
+    height: 1px;
+    background: linear-gradient(to right, #000000, transparent);
+    text-align: left;
+}
+
+.divider-vertical {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 1px;
+    background: linear-gradient(to bottom, #000000, transparent);
+}
+.info-about-me {
+width: 300px;
+padding: 30px;
+}
+.paragraph {
+    width: 300px;
+    padding: 30px;
+}
+
+.about-me {
+    display: flex;
+}
+span {
+    color: pink;
+}
+h1 {
+    margin-left: 30px;
+}
+
+.services-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two columns with equal width */
+  grid-template-rows: repeat(2, 1fr);    /* Create two rows with equal height */
+  gap: 10px; /* Optional gap between grid items for spacing */
+  width: 300px;
+}
+
+.services-content {
+
+    width: 300px;
+    padding: 30px;
+}
+
+.prices-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+.price-content {
+    padding: 30px;
+}
+
+.fact-boxes {
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+}
+.fact-content {
+    text-align: center;
+    width: 100px;
+    padding: 30px;
+}
+.clients-boxes {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.client-content {
+    justify-content: center;
+}
+.client-content img{
+    width: 150px;
+    
+}
+.quote-boxes {
+    display: grid;
+    text-align: center;
+}
+.quote {
+    margin: auto;
+}
+.quote p {
+    quotes: "\00AB" "\00BB";
+    color: grey;
+    font-size: 20px;
+    padding: 30px;
+}
+.me-content {
+    margin: auto;
+}
+.me-content img {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid pink; 
+}
+.p-web-designer {
+    color: #888;
+}

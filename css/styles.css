@@ -1,0 +1,164 @@
+
+body{
+    background-color: pink;
+
+    font-family: 'Caveat', cursive;
+
+    
+}
+content{
+    height: 100%; 
+}
+.fixed-height{
+    margin: 10vh 0 0 0;
+    height: 90vh; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+.hambourger{
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.header{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+.header ul li {
+    height: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Style for the container that creates a circular border */
+.circle-border {
+    width: 200px; /* Adjust the width and height as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Hides any image overflow outside the circle */
+    border: 2px solid pink; /* Border style and color */
+    margin: auto;
+}
+
+/* Style for the image inside the container */
+.circle-border img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+.container {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 90%; /* Set full viewport height */
+    margin: 0;
+    position: relative;
+}
+.card-left-content{
+text-align: center;
+}
+.card-view-left {
+    margin: 0;
+    z-index: 2;
+    display: flex; /* Use flexbox to align card to the left */
+    height: 100%; /* Set full viewport height */
+}
+
+/* Style for the card */
+.card {
+    width: 400px; /* Set the width of the card */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow for a card-like effect */
+    position: relative;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+.buttons div{
+    width: 50%;
+    background-color: #fff;
+    height: 40px;
+    text-align: center;
+
+}
+
+.right-card {
+    margin: 0;
+    z-index: 1; /* Place right card below the left card */
+    width: 50%;
+    background-color: #fff;
+    overflow-y: scroll; /* Enable vertical scrolling for the right card */
+    height: 90%; /* Limit the maximum height to make it scrollable */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: pink;
+}
+
+/* Slide in from left animation */
+@keyframes slideInToLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Slide out to right animation */
+@keyframes slideOutToRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(0);
+        opacity: 50%;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the right card content */
+.slide-in {
+    animation: slideInToLeft 1s ease-in-out forwards;
+}
+
+.slide-out {
+    animation: slideOutToRight 1s ease-in-out forwards;
+}
+
+.right-card {
+    opacity: 1; /* Initial opacity */
+    transition: opacity 1s ease-in-out; /* Add a transition for smooth hiding/showing */
+}
+
+.right-card .hidden {
+    opacity: 0;
+}
+
+
